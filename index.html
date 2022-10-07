@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc Fuel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="inner__main">
+            <div class="header__elem">
+                <div class="input__block">
+                    <input class="input" id="elem1" type="text" name="quantity" placeholder="00" maxlength="2" autofocus onkeyup="mover(event, '', 'elem1', 'elem2')"> 
+                    <input class="input" id="elem2" type="text" name="quantity" placeholder="00" maxlength="2" onkeyup="mover(event, 'elem1', 'elem2', 'elem3')"> 
+                    <input class="input" id="elem3" type="text" name="quantity" placeholder="00" maxlength="2" onkeyup="mover(event, 'elem2', 'elem3', 'elem4')"> 
+                    <input class="input" id="elem4" type="text" name="quantity" placeholder="00" maxlength="2" onkeyup="mover(event, 'elem3', 'elem4', '')"> 
+                </div>
+            </div>
+            <div class="options options__header">
+                <span>
+                    <span>Часы</span>
+                    <span id="hours">00</span>
+                </span>
+                <span>
+                    <span>Минуты</span>
+                    <span id="minutes">00</span>
+                </span>
+            </div>
+            <div class="engine">
+                <div class="options">
+                    <span>TG16MS5K</span>
+                    <span class="engine__options-TJ" id="dt">00</span>
+                </div>
+                <div class="options">
+                    <span>АБ-8</span>
+                    <span class="engine__options-AB" id="ab">00</span>
+                </div>
+            </div>
+            <div class="options__block">
+                <div class="options options__half">
+                    <span>АБ-8 Половина</span>
+                    <span class="options__block-half" id="half-fuel">00</span>
+                </div>
+                <div class="options">
+                    <span>Наработано</span>
+                    <span class="options__block-worked" id="worked">00</span>
+                </div>
+            </div>
+            <div class="options options__footer" id="from-till">
+                <div class="options__from">
+                    <span>C</span>
+                    <span id="from">00</span>
+                </div>
+                <div class="options__till">
+                    <span>До</span>
+                    <span id="till">00</span>
+                </div>
+            </div>
+            <div class="toggle">
+                <div class="toggle__on"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 18px;
+}
+.main{
+    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.inner__main{
+    position: relative;
+    padding: 20px 10px;
+    margin: 0 auto;
+    width: 282px;
+    height: 410px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 9px;
+    border: 4px solid #12827793;
+}
+.input{
+    color: inherit;
+    width: 52px;
+    font-size: 40px;
+    background-color: inherit;
+    margin-right: 3px;
+}
+input::placeholder {
+    color: #8d8d8d8d;
+}
+.input:nth-child(2){
+    margin-right: 22px;
+}
+.done{
+    cursor: pointer;
+}
+.header__elem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.options{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.options__header{
+    background-color: #42a09280;
+    margin: 7px 0;
+    border-radius: 6px;
+}
+.options__half{
+    margin-bottom: 8px;
+}
+.engine{
+    padding: 3px;
+    background-color: #52958b8d;
+    border-radius: 6px;
+    margin-bottom: 9px;
+}
+.engine__options-TJ, .engine__options-AB{
+    padding: 5px;
+    background-color: #fbfbfbb5;
+    border-radius: 6px;
+}
+.options__block{
+    background-color: #b9c4c94a;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+.options__block-worked, .options__block-half{
+    padding: 3px;
+    background-color: #52958b8d;    
+    border-radius: 6px;
+    color: white;
+}
+.options__footer{
+    margin-top: 7px;
+}
+.options__from, .options__till{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+.toggle__on{
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background-color: #fff;
+    border-radius: 50%;
+    left: 5px;
+    transition: 0.2s;
+}
+.toggle{
+    background-color: #c2cbc98d;
+    border-radius: 30px;  
+    position: absolute;
+    top: 0;
+    right: -90px;
+    display: flex;
+    align-items: center;
+    width: 70px;
+    height: 40px;
+    padding: 3px 6px;    
+}
+.shift{
+    left: 35px;
+}
+.background{
+    background-color: #363c3fd3;
+}
+
+.night__body{
+    background-color: #000000d3;
+    color: white;
+}
+.night__engine{
+    background-color: #595a5a8d;
+}
+.night__iner-elem{
+    border: 4px solid #595a5a8d;
+}
+
